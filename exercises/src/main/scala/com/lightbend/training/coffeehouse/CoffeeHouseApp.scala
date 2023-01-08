@@ -5,6 +5,7 @@ package com.lightbend.training.coffeehouse
 
 import akka.actor.{ActorRef, ActorSystem}
 import akka.event.Logging
+import com.lightbend.training.coffeehouse.CoffeeHouse.props
 
 import scala.annotation.tailrec
 import scala.concurrent.Await
@@ -54,7 +55,7 @@ class CoffeeHouseApp(system: ActorSystem) extends Terminal {
   }
 
   protected def createCoffeeHouse(): ActorRef =
-    system.deadLetters
+    system.actorOf(CoffeeHouse.props, "coffee-house")
 
   @tailrec
   private def commandLoop(): Unit =

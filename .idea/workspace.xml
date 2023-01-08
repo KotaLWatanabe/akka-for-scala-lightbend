@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a60404b8-b975-45e2-88ac-21f7fe6768e7" name="Changes" comment="" />
+    <list default="true" id="a60404b8-b975-45e2-88ac-21f7fe6768e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/base-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/base-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-coffee-house-system.json" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-coffee-house-system.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/resources/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouse.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouse.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouseApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouseApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/AdditionalSettings.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project/AdditionalSettings.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Man.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project/Man.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +51,9 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="o27rxdaj" />
   </component>
@@ -54,27 +70,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Kota/ScalaProject/LAS-P-lightbend-akka-for-scala-professional-v1/project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3475862",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Scala"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kota/ScalaProject/LAS-P-lightbend-akka-for-scala-professional-v1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3475862&quot;,
+    &quot;scala_project_settings_configurable.last_selected_tab_index&quot;: &quot;0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Kota\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\project" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="exercises" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Scala REPL.Scala REPL" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="compilerHighlightingScala2" value="true" />
+    <option name="intInjectionMapping">
+      <map>
+        <entry key="css" value="CSS" />
+        <entry key="html" value="HTML" />
+        <entry key="java" value="JAVA" />
+        <entry key="js" value="JavaScript" />
+        <entry key="json" value="JSON" />
+        <entry key="json5" value="JSON5" />
+        <entry key="less" value="LESS" />
+        <entry key="protobuf" value="protobuf" />
+        <entry key="scala" value="Scala" />
+        <entry key="sql" value="SQL" />
+        <entry key="sqlu" value="SQL" />
+        <entry key="svg" value="SVG" />
+        <entry key="xhtml" value="XHTML" />
+        <entry key="xml" value="XML" />
+        <entry key="xpath" value="XPath" />
+        <entry key="yaml" value="yaml" />
+      </map>
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,12 +153,33 @@
       <workItem from="1659786060644" duration="546000" />
       <workItem from="1659863911272" duration="30000" />
       <workItem from="1659915964124" duration="1349000" />
-      <workItem from="1659917707983" duration="2000000" />
+      <workItem from="1659917707983" duration="3628000" />
+      <workItem from="1661776096411" duration="330000" />
+      <workItem from="1661776547452" duration="151000" />
+      <workItem from="1661776912404" duration="196000" />
+      <workItem from="1661777483745" duration="266000" />
+      <workItem from="1661777761575" duration="80000" />
+      <workItem from="1661777875945" duration="8000" />
+      <workItem from="1661777968657" duration="37000" />
+      <workItem from="1661778013925" duration="267000" />
+      <workItem from="1661778290550" duration="194000" />
+      <workItem from="1661778492238" duration="47000" />
+      <workItem from="1661778546529" duration="485000" />
+      <workItem from="1668223442727" duration="1606000" />
+      <workItem from="1668609258854" duration="771000" />
+      <workItem from="1671249534186" duration="32000" />
+      <workItem from="1673099932654" duration="1010000" />
+      <workItem from="1673170958151" duration="2948000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/akka-for-scala-lightbend" />
+    </ignored-roots>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
