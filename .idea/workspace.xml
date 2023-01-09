@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a60404b8-b975-45e2-88ac-21f7fe6768e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/base-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/base-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-coffee-house-system.json" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-coffee-house-system.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/resources/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouse.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouse.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouseApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouseApp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/AdditionalSettings.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project/AdditionalSettings.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Man.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project/Man.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +161,7 @@
       <workItem from="1668609258854" duration="771000" />
       <workItem from="1671249534186" duration="32000" />
       <workItem from="1673099932654" duration="1010000" />
-      <workItem from="1673170958151" duration="2948000" />
+      <workItem from="1673170958151" duration="5261000" />
     </task>
     <servers />
   </component>

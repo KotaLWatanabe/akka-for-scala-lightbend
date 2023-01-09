@@ -3,7 +3,7 @@
 
 package com.lightbend.training.coffeehouse
 
-import akka.actor.{ActorRef, ActorSystem}
+import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.event.Logging
 import com.lightbend.training.coffeehouse.CoffeeHouse.props
 
@@ -41,6 +41,15 @@ class CoffeeHouseApp(system: ActorSystem) extends Terminal {
   private val log = Logging(system, getClass.getName)
 
   private val coffeeHouse = createCoffeeHouse()
+
+  system.actorOf(Props(new Actor {
+    coffeeHouse ! "Brew Coffee"
+
+    override def receive: Receive = {
+      case msg: String => log.info(msg)
+    }
+  }))
+
 
   def run(): Unit = {
     log.warning(
