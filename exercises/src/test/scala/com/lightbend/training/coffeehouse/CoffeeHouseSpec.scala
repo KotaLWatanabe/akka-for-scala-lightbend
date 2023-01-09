@@ -14,14 +14,17 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
         system.actorOf(CoffeeHouse.props)
       }
     }
+    "result in creating a child actor with the name 'waiter'" in {
+      system.actorOf(CoffeeHouse.props, "create-waiter")
+      TestProbe().expectActor("/user/create-waiter/waiter")
+    }
   }
 
-  "Sending a message to CoffeeHouse" should {
-    "result in sending a 'coffee brewing' message as response" in {
-      val sender = TestProbe()
-      val coffeeHouse = system.actorOf(CoffeeHouse.props)
-      sender.send(coffeeHouse, "Brew Coffee")
-      sender.expectMsgPF() { case message if message.toString matches ".*[Cc]offee.*" =>() }
+  "Sending CreateGuest to CoffeeHouse" should {
+    "result in creating a Guest" in {
+      val coffeeHouse = system.actorOf(CoffeeHouse.props, "create-guest")
+      coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino)
+      TestProbe().expectActor("/user/create-guest/$*")
     }
   }
 }
