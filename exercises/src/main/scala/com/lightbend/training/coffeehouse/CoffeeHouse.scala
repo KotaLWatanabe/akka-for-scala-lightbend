@@ -1,18 +1,22 @@
 package com.lightbend.training.coffeehouse
 
 import akka.actor.{Actor, ActorLogging, ActorRef, Props}
-import com.lightbend.training.coffeehouse.CoffeeHouse.CreateGuest
 
 object CoffeeHouse {
-  case object CreateGuest
+  case class CreateGuest(favoriteCoffee: Coffee)
   def props: Props = Props(new CoffeeHouse)
 }
 class CoffeeHouse extends Actor with ActorLogging {
-  log.debug("CoffeeHouse open")
+  import CoffeeHouse._
+  log.debug("CoffeeHouse Open")
 
-  protected def createGuest(): ActorRef = context.actorOf(Guest.props)
+  private val waiter: ActorRef = createWaiter()
+
+  protected def createGuest(favoriteCoffee: Coffee): ActorRef = context.actorOf(Guest.props(waiter, favoriteCoffee))
+  private def createWaiter(): ActorRef = context.actorOf(Waiter.props, "waiter")
+
   override def receive: Receive = {
-    case CreateGuest => createGuest()
+    case CreateGuest(coffee: Coffee) => createGuest(coffee)
     case _ => sender() ! "Coffee Brewing"
   }
 }

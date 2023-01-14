@@ -5,7 +5,6 @@ package com.lightbend.training.coffeehouse
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.event.Logging
-import com.lightbend.training.coffeehouse.CoffeeHouse.props
 
 import scala.annotation.tailrec
 import scala.concurrent.Await
@@ -43,7 +42,7 @@ class CoffeeHouseApp(system: ActorSystem) extends Terminal {
   private val coffeeHouse = createCoffeeHouse()
 
   system.actorOf(Props(new Actor {
-    coffeeHouse ! "Brew Coffee"
+    //coffeeHouse ! "Brew Coffee"
 
     override def receive: Receive = {
       case msg: String => log.info(msg)
@@ -88,7 +87,7 @@ class CoffeeHouseApp(system: ActorSystem) extends Terminal {
       caffeineLimit: Int
   ): Unit = {
     (1 to count).foreach {
-      _ => coffeeHouse ! CoffeeHouse.CreateGuest
+      _ => coffeeHouse ! CoffeeHouse.CreateGuest(coffee)
     }
   }
 
