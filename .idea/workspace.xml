@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a60404b8-b975-45e2-88ac-21f7fe6768e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Waiter.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/base-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/base-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/exercises.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/exercises.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-coffee-house-system.json" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-coffee-house-system.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/scala/com/lightbend/training/coffeehouse/BaseAkkaSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/scala/com/lightbend/training/coffeehouse/BaseAkkaSpec.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-default.json" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-default.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/akka-diagnostics/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/akka-diagnostics/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/resources/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouse.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouse.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouseApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouseApp.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Guest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Guest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +96,7 @@
       <recent name="C:\Users\Kota\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\project" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.CoffeeHouseAppSpec">
+  <component name="RunManager" selected="ScalaTest.CoffeeHouseSpec">
     <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="exercises" />
       <option name="allowRunningInParallel" value="false" />
@@ -131,10 +137,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CoffeeHouseSpec.Creating CoffeeHouse should result in creating a child actor with the name 'waiter'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="exercises" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="com.lightbend.training.coffeehouse.CoffeeHouseSpec" />
+      <option name="testName" value="Creating CoffeeHouse should result in creating a child actor with the name 'waiter'" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoffeeHouseSpec.Creating CoffeeHouse should result in logging a status message at debug" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="exercises" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="com.lightbend.training.coffeehouse.CoffeeHouseSpec" />
+      <option name="testName" value="Creating CoffeeHouse should result in logging a status message at debug" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="ScalaTest.CoffeeHouseAppSpec" />
         <item itemvalue="ScalaTest.CoffeeHouseSpec" />
+        <item itemvalue="ScalaTest.CoffeeHouseSpec.Creating CoffeeHouse should result in creating a child actor with the name 'waiter'" />
+        <item itemvalue="ScalaTest.CoffeeHouseSpec.Creating CoffeeHouse should result in logging a status message at debug" />
+        <item itemvalue="ScalaTest.CoffeeHouseAppSpec" />
         <item itemvalue="Scala REPL.Scala REPL" />
       </list>
     </recent_temporary>
@@ -193,7 +229,8 @@
       <workItem from="1671249534186" duration="32000" />
       <workItem from="1673099932654" duration="1010000" />
       <workItem from="1673170958151" duration="8252000" />
-      <workItem from="1673691109401" duration="3516000" />
+      <workItem from="1673691109401" duration="5070000" />
+      <workItem from="1673707552628" duration="2552000" />
     </task>
     <servers />
   </component>

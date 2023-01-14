@@ -1,69 +1,69 @@
 {
-  "start-time" : "2022-08-08T00:33:39.836",
+  "start-time" : "2023-01-14T15:51:10.900",
   "akka-version" : "2.6.19",
   "akka-diagnostics-version" : "1.1.16",
   "classpath" : "C:\Users\Kota\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\exercises\target\scala-2.13\test-classes;C:\Users\Kota\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\exercises\target\scala-2.13\classes;C:\Users\Kota\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\common\target\scala-2.13\classes;C:\Users\Kota\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\common\target\scala-2.13\test-classes;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.4\scala-library-2.13.4.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-actor_2.13\2.6.19\akka-actor_2.13-2.6.19.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-slf4j_2.13\2.6.19\akka-slf4j_2.13-2.6.19.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.13\2.1.1\scala-parser-combinators_2.13-2.1.1.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\akka\akka-diagnostics_2.13\1.1.16\akka-diagnostics_2.13-1.1.16.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\cinnamon\cinnamon-akka_2.13\2.17.0\cinnamon-akka_2.13-2.17.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\cinnamon\cinnamon-jvm-metrics-producer\2.17.0\cinnamon-jvm-metrics-producer-2.17.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\cinnamon\cinnamon-prometheus\2.17.0\cinnamon-prometheus-2.17.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\cinnamon\cinnamon-prometheus-httpserver\2.17.0\cinnamon-prometheus-httpserver-2.17.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-testkit_2.13\2.6.19\akka-testkit_2.13-2.6.19.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest_2.13\3.2.11\scalatest_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\config\1.4.2\config-1.4.2.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-java8-compat_2.13\1.0.0\scala-java8-compat_2.13-1.0.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\cinnamon\cinnamon-java\2.17.0\cinnamon-java-2.17.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\cinnamon\cinnamon-scala_2.13\2.17.0\cinnamon-scala_2.13-2.17.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\cinnamon\cinnamon-core-java\2.17.0\cinnamon-core-java-2.17.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\io\prometheus\simpleclient\0.8.0\simpleclient-0.8.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\io\prometheus\simpleclient_httpserver\0.8.0\simpleclient_httpserver-0.8.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-core_2.13\3.2.11\scalatest-core_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-featurespec_2.13\3.2.11\scalatest-featurespec_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-flatspec_2.13\3.2.11\scalatest-flatspec_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-freespec_2.13\3.2.11\scalatest-freespec_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-funsuite_2.13\3.2.11\scalatest-funsuite_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-funspec_2.13\3.2.11\scalatest-funspec_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-propspec_2.13\3.2.11\scalatest-propspec_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-refspec_2.13\3.2.11\scalatest-refspec_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-wordspec_2.13\3.2.11\scalatest-wordspec_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-diagrams_2.13\3.2.11\scalatest-diagrams_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-matchers-core_2.13\3.2.11\scalatest-matchers-core_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-shouldmatchers_2.13\3.2.11\scalatest-shouldmatchers_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-mustmatchers_2.13\3.2.11\scalatest-mustmatchers_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.4\scala-reflect-2.13.4.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\cinnamon\cinnamon-core_2.13\2.17.0\cinnamon-core_2.13-2.17.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo.lightbend.com\pass\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\commercial-releases\com\lightbend\cinnamon\cinnamon-common\2.17.0\cinnamon-common-2.17.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\io\prometheus\simpleclient_common\0.8.0\simpleclient_common-0.8.0.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest-compatible\3.2.11\scalatest-compatible-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_2.13\3.2.11\scalactic_2.13-3.2.11.jar;C:\Users\Kota\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-xml_2.13\2.0.1\scala-xml_2.13-2.0.1.jar;C:\Users\Kota\.sbt\boot\scala-2.12.15\org.scala-sbt\sbt\1.6.2\test-agent-1.6.2.jar;C:\Users\Kota\.sbt\boot\scala-2.12.15\org.scala-sbt\sbt\1.6.2\test-interface-1.0.jar",
   "configuration-warnings" : [],
   "system-metrics" : {
     "heap-init" : 1073741824,
-    "heap-max" : 17133731840,
-    "heap-used" : 50331648,
-    "heap-committed" : 1073741824,
+    "heap-max" : 17137926144,
+    "heap-used" : 33184240,
+    "heap-committed" : 83886080,
     "os-processors" : 24,
     "mem-pool-0" : {
       "name" : "CodeHeap 'non-nmethods'",
       "type" : "Non-heap memory",
       "init" : 2555904,
-      "max" : 7602176,
-      "used" : 2460160,
-      "committed" : 3145728
+      "max" : 7667712,
+      "used" : 1966592,
+      "committed" : 3211264
     },
     "mem-pool-1" : {
       "name" : "Metaspace",
       "type" : "Non-heap memory",
       "init" : 0,
       "max" : -1,
-      "used" : 30787256,
-      "committed" : 31768576
+      "used" : 25193016,
+      "committed" : 25559040
     },
     "mem-pool-2" : {
       "name" : "CodeHeap 'profiled nmethods'",
       "type" : "Non-heap memory",
       "init" : 2555904,
-      "max" : 122028032,
-      "used" : 5430016,
-      "committed" : 5439488
+      "max" : 121962496,
+      "used" : 6834304,
+      "committed" : 6881280
     },
     "mem-pool-3" : {
       "name" : "Compressed Class Space",
       "type" : "Non-heap memory",
       "init" : 0,
       "max" : 1073741824,
-      "used" : 3602864,
-      "committed" : 4063232
+      "used" : 3032288,
+      "committed" : 3211264
     },
     "mem-pool-4" : {
       "name" : "G1 Eden Space",
       "type" : "Heap memory",
-      "init" : 54525952,
+      "init" : 58720256,
       "max" : -1,
-      "used" : 41943040,
-      "committed" : 159383552
+      "used" : 25165824,
+      "committed" : 50331648
     },
     "mem-pool-5" : {
       "name" : "G1 Old Gen",
       "type" : "Heap memory",
-      "init" : 1019215872,
-      "max" : 17133731840,
-      "used" : 0,
-      "committed" : 905969664
+      "init" : 1015021568,
+      "max" : 17137926144,
+      "used" : 5602304,
+      "committed" : 25165824
     },
     "mem-pool-6" : {
       "name" : "G1 Survivor Space",
       "type" : "Heap memory",
       "init" : 0,
       "max" : -1,
-      "used" : 8388608,
+      "used" : 2416112,
       "committed" : 8388608
     },
     "mem-pool-7" : {
@@ -71,12 +71,18 @@
       "type" : "Non-heap memory",
       "init" : 2555904,
       "max" : 122028032,
-      "used" : 1350656,
+      "used" : 1698560,
       "committed" : 2555904
     }
   },
   "configuration" : {
     "akka" : {
+        "actor" : {
+            "debug" : {
+                "lifecycle" : "on",
+                "unhandled" : "on"
+            }
+        },
         "instrumentations" : [
             "cinnamon.akka.CinnamonActorInstrumentation",
             "cinnamon.akka.pattern.CinnamonAskPatternInstrumentation"
@@ -85,10 +91,8 @@
             "akka.testkit.TestEventListener"
         ],
         "logging-filter" : "akka.event.DefaultLoggingFilter",
+        "loglevel" : "DEBUG",
         "version" : "2.6.19"
-    },
-    "awt" : {
-        "toolkit" : "sun.awt.windows.WToolkit"
     },
     "cinnamon" : {
         "akka" : {
@@ -252,58 +256,58 @@
             }
         }
     },
+    "coffe-house" : {
+        "guest" : {
+            "finish-coffee-duration" : "2 seconds"
+        }
+    },
     "excluded-sensitive-paths" : [
         "user.home",
         "user.dir",
         "user.name"
     ],
     "file" : {
-        "encoding" : "MS932",
+        "encoding" : "UTF-8",
         "separator" : "\\"
     },
     "java" : {
-        "awt" : {
-            "graphicsenv" : "sun.awt.Win32GraphicsEnvironment",
-            "printerjob" : "sun.awt.windows.WPrinterJob"
-        },
         "class" : {
             "path" : "C:\\Users\\Kota\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\exercises\\target\\scala-2.13\\test-classes;C:\\Users\\Kota\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\exercises\\target\\scala-2.13\\classes;C:\\Users\\Kota\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\common\\target\\scala-2.13\\classes;C:\\Users\\Kota\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\common\\target\\scala-2.13\\test-classes;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.4\\scala-library-2.13.4.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-actor_2.13\\2.6.19\\akka-actor_2.13-2.6.19.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-slf4j_2.13\\2.6.19\\akka-slf4j_2.13-2.6.19.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-classic\\1.2.11\\logback-classic-1.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\2.1.1\\scala-parser-combinators_2.13-2.1.1.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\akka\\akka-diagnostics_2.13\\1.1.16\\akka-diagnostics_2.13-1.1.16.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-akka_2.13\\2.17.0\\cinnamon-akka_2.13-2.17.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-jvm-metrics-producer\\2.17.0\\cinnamon-jvm-metrics-producer-2.17.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-prometheus\\2.17.0\\cinnamon-prometheus-2.17.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-prometheus-httpserver\\2.17.0\\cinnamon-prometheus-httpserver-2.17.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-testkit_2.13\\2.6.19\\akka-testkit_2.13-2.6.19.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.13\\3.2.11\\scalatest_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.2\\config-1.4.2.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-java8-compat_2.13\\1.0.0\\scala-java8-compat_2.13-1.0.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.36\\slf4j-api-1.7.36.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-core\\1.2.11\\logback-core-1.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\commons\\commons-lang3\\3.5\\commons-lang3-3.5.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-java\\2.17.0\\cinnamon-java-2.17.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-scala_2.13\\2.17.0\\cinnamon-scala_2.13-2.17.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-core-java\\2.17.0\\cinnamon-core-java-2.17.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\prometheus\\simpleclient\\0.8.0\\simpleclient-0.8.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hdrhistogram\\HdrHistogram\\2.1.12\\HdrHistogram-2.1.12.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\prometheus\\simpleclient_httpserver\\0.8.0\\simpleclient_httpserver-0.8.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-core_2.13\\3.2.11\\scalatest-core_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-featurespec_2.13\\3.2.11\\scalatest-featurespec_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-flatspec_2.13\\3.2.11\\scalatest-flatspec_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-freespec_2.13\\3.2.11\\scalatest-freespec_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funsuite_2.13\\3.2.11\\scalatest-funsuite_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funspec_2.13\\3.2.11\\scalatest-funspec_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-propspec_2.13\\3.2.11\\scalatest-propspec_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-refspec_2.13\\3.2.11\\scalatest-refspec_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-wordspec_2.13\\3.2.11\\scalatest-wordspec_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-diagrams_2.13\\3.2.11\\scalatest-diagrams_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-matchers-core_2.13\\3.2.11\\scalatest-matchers-core_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-shouldmatchers_2.13\\3.2.11\\scalatest-shouldmatchers_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-mustmatchers_2.13\\3.2.11\\scalatest-mustmatchers_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.4\\scala-reflect-2.13.4.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-core_2.13\\2.17.0\\cinnamon-core_2.13-2.17.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo.lightbend.com\\pass\\shutQaw3_VIxQDoW9fjY--WekK55j4NCukQwLYLmB27qib4E\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-common\\2.17.0\\cinnamon-common-2.17.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\prometheus\\simpleclient_common\\0.8.0\\simpleclient_common-0.8.0.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-compatible\\3.2.11\\scalatest-compatible-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.13\\3.2.11\\scalactic_2.13-3.2.11.jar;C:\\Users\\Kota\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.13\\2.0.1\\scala-xml_2.13-2.0.1.jar;C:\\Users\\Kota\\.sbt\\boot\\scala-2.12.15\\org.scala-sbt\\sbt\\1.6.2\\test-agent-1.6.2.jar;C:\\Users\\Kota\\.sbt\\boot\\scala-2.12.15\\org.scala-sbt\\sbt\\1.6.2\\test-interface-1.0.jar",
-            "version" : "55.0"
+            "version" : "63.0"
         },
-        "home" : "C:\\Users\\Kota\\.jdks\\corretto-11.0.16",
+        "home" : "C:\\Users\\Kota\\.jdks\\openjdk-19.0.1",
         "io" : {
             "tmpdir" : "C:\\Users\\Kota\\AppData\\Local\\Temp\\"
         },
         "library" : {
-            "path" : "C:\\Users\\Kota\\.jdks\\corretto-11.0.16\\bin;C:\\Windows\\Sun\\Java\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\PowerShell\\7\\;C:\\PROGRA~1\\JPKI;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\Kota\\AppData\\Local\\Microsoft\\WindowsApps;;F:\\JetBrains\\IntelliJ IDEA 2022.2\\bin;;C:\\Users\\Kota\\AppData\\Local\\JetBrains\\Toolbox\\scripts;F:\\Programs\\VS_Code\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\AdoptOpenJDK\\openjdk8-binaries\\releases\\download\\jdk8u292-b10\\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\\jdk8u292-b10\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\data\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\adoptium\\temurin18-binaries\\releases\\download\\jdk-18.0.2%252B9\\OpenJDK18U-jdk_x64_windows_hotspot_18.0.2_9.zip\\jdk-18.0.2+9\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\AdoptOpenJDK\\openjdk11-binaries\\releases\\download\\jdk-11%252B28\\OpenJDK11-jdk_x64_windows_hotspot_11_28.zip\\jdk-11+28\\bin;."
+            "path" : "C:\\Users\\Kota\\.jdks\\openjdk-19.0.1\\bin;C:\\Windows\\Sun\\Java\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\PROGRA~1\\JPKI;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Kubernetes\\Minikube;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Calibre2\\;C:\\Users\\Kota\\AppData\\Local\\Microsoft\\WindowsApps;F:\\JetBrains\\IntelliJ IDEA 2022.2\\bin;C:\\Users\\Kota\\AppData\\Local\\JetBrains\\Toolbox\\scripts;F:\\Programs\\VS_Code\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\AdoptOpenJDK\\openjdk8-binaries\\releases\\download\\jdk8u292-b10\\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\\jdk8u292-b10\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\data\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\adoptium\\temurin18-binaries\\releases\\download\\jdk-18.0.2%252B9\\OpenJDK18U-jdk_x64_windows_hotspot_18.0.2_9.zip\\jdk-18.0.2+9\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\AdoptOpenJDK\\openjdk11-binaries\\releases\\download\\jdk-11%252B28\\OpenJDK11-jdk_x64_windows_hotspot_11_28.zip\\jdk-11+28\\bin;C:\\Users\\Kota\\AppData\\Local\\GitHubDesktop\\bin;F:\\JetBrains\\IntelliJ IDEA 2022.2.1\\bin;;C:\\Users\\Kota\\AppData\\Roaming\\npm;C:\\spark-3.3.1-bin-hadoop3-scala2.13\\bin;C:\\Program Files\\Kubernetes\\Minikube;C:\\ProgramData\\chocolatey\\lib\\kubernetes-helm\\tools\\windows-amd64;;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\cdn.azul.com\\zulu\\bin\\zulu19.30.11-ca-jdk19.0.1-win_x64.zip\\zulu19.30.11-ca-jdk19.0.1-win_x64\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\cdn.azul.com\\zulu\\bin\\zulu18.32.13-ca-jdk18.0.2.1-win_x64.zip\\zulu18.32.13-ca-jdk18.0.2.1-win_x64\\bin;."
         },
         "runtime" : {
             "name" : "OpenJDK Runtime Environment",
-            "version" : "11.0.16+8-LTS"
+            "version" : "19.0.1+10-21"
         },
         "specification" : {
             "name" : "Java Platform API Specification",
             "vendor" : "Oracle Corporation",
-            "version" : "11"
+            "version" : "19"
         },
         "vendor" : {
             "url" : {
-                "bug" : "https://github.com/corretto/corretto-11/issues/"
-            },
-            "version" : "Corretto-11.0.16.8.1"
+                "bug" : "https://bugreport.java.com/bugreport/"
+            }
         },
-        "version" : "11.0.16",
+        "version" : "19.0.1",
         "vm" : {
             "compressedOopsMode" : "Zero based",
-            "info" : "mixed mode",
+            "info" : "mixed mode, sharing",
             "name" : "OpenJDK 64-Bit Server VM",
             "specification" : {
                 "name" : "Java Virtual Machine Specification",
                 "vendor" : "Oracle Corporation",
-                "version" : "11"
+                "version" : "19"
             },
-            "vendor" : "Amazon.com Inc.",
-            "version" : "11.0.16+8-LTS"
+            "vendor" : "Oracle Corporation",
+            "version" : "19.0.1+10-21"
         }
     },
     "jdk" : {
@@ -311,6 +315,9 @@
     },
     "line" : {
         "separator" : "\r\n"
+    },
+    "native" : {
+        "encoding" : "MS932"
     },
     "os" : {
         "arch" : "amd64",
@@ -320,6 +327,12 @@
     "path" : {
         "separator" : ";"
     },
+    "stderr" : {
+        "encoding" : "MS932"
+    },
+    "stdout" : {
+        "encoding" : "MS932"
+    },
     "sun" : {
         "arch" : {
             "data" : {
@@ -328,21 +341,20 @@
         },
         "boot" : {
             "library" : {
-                "path" : "C:\\Users\\Kota\\.jdks\\corretto-11.0.16\\bin"
+                "path" : "C:\\Users\\Kota\\.jdks\\openjdk-19.0.1\\bin"
             }
         },
         "cpu" : {
             "endian" : "little",
             "isalist" : "amd64"
         },
-        "desktop" : "windows",
         "io" : {
             "unicode" : {
                 "encoding" : "UnicodeLittle"
             }
         },
         "java" : {
-            "command" : "sbt.ForkMain 51555",
+            "command" : "sbt.ForkMain 59353",
             "launcher" : "SUN_STANDARD"
         },
         "jnu" : {
@@ -361,7 +373,6 @@
         "country" : "JP",
         "language" : "ja",
         "script" : "",
-        "timezone" : "",
         "variant" : ""
     }
 }
