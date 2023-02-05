@@ -30,13 +30,13 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
   "Sending CreateGuest to CoffeeHouse" should {
     "result in creating a Guest" in {
       val coffeeHouse = system.actorOf(CoffeeHouse.props(Int.MaxValue), "create-guest")
-      coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino)
+      coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, Int.MaxValue)
       TestProbe().expectActor("/user/create-guest/$*")
     }
     "result in logging status guest added to guest book" in {
       val coffeeHouse = system.actorOf(CoffeeHouse.props(Int.MaxValue), "add-to-guest-book")
       EventFilter.info(source = coffeeHouse.path.toString, pattern = ".*added to guest book.*", occurrences = 1) intercept {
-        coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino)
+        coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, Int.MaxValue)
       }
     }
   }
@@ -63,11 +63,11 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
     "result in logging status guest caffeine count incremented" in {
       val dummyGuest = TestProbe()
       val coffeeHouse = system.actorOf(Props(new CoffeeHouse(Int.MaxValue) {
-        override protected def createGuest(favoriteCoffee: Coffee): ActorRef = dummyGuest.ref
+        override protected def createGuest(favoriteCoffee: Coffee, caffeineLimit: Int): ActorRef = dummyGuest.ref
       }), "caffeine-count-incremented-guest-book")
 
       EventFilter.info(source = coffeeHouse.path.toString, pattern = ".*caffeine count incremented.*", occurrences = 1) intercept {
-        coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino)
+        coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, Int.MaxValue)
         coffeeHouse ! CoffeeHouse.ApproveCoffee(Coffee.Akkaccino, dummyGuest.ref)
       }
     }
@@ -85,6 +85,39 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
       val coffeeHouse = system.actorOf(CoffeeHouse.props(0))
       coffeeHouse ! CoffeeHouse.ApproveCoffee(Coffee.Akkaccino, guest)
       probe.expectTerminated(guest)
+    }
+  }
+
+  "On termination of Guest, CoffeeHouse" should {
+    "remove the guest from the guest book" in {
+      val barista = TestProbe()
+      val coffeeHouse =
+        TestActorRef(new CoffeeHouse(Int.MaxValue) {
+          override def createBarista() = barista.ref
+        })
+      coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, Int.MaxValue)
+      val guest = barista.expectMsgPF() {
+        case Barista.PrepareCoffee(Coffee.Akkaccino, guest) => guest
+      }
+      barista.watch(guest)
+      system.stop(guest)
+      barista.expectTerminated(guest)
+      barista.within(2 seconds) {
+        barista.awaitAssert {
+          coffeeHouse ! CoffeeHouse.ApproveCoffee(Coffee.Akkaccino, guest)
+          barista.expectMsgPF(100 milliseconds) {
+            case Barista.PrepareCoffee(Coffee.Akkaccino, `guest`) => ()
+          }
+        }
+      }
+    }
+    "result in logging a thanks message at info" in {
+      val coffeeHouse = system.actorOf(CoffeeHouse.props(1), "thanks-coffee-house")
+      EventFilter.info(source = coffeeHouse.path.toString, pattern = ".*for being our guest.*", occurrences = 1) intercept {
+        coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, Int.MaxValue)
+        val guest = TestProbe().expectActor("/user/thanks-coffee-house/$*")
+        coffeeHouse ! CoffeeHouse.ApproveCoffee(Coffee.Akkaccino, guest)
+      }
     }
   }
 }

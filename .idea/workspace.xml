@@ -38,6 +38,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="o27rxdaj" />
   </component>
@@ -230,7 +237,7 @@
       <workItem from="1675423544200" duration="1844000" />
       <workItem from="1675426316432" duration="403000" />
       <workItem from="1675491020008" duration="80000" />
-      <workItem from="1675491109488" duration="5904000" />
+      <workItem from="1675491109488" duration="7110000" />
     </task>
     <servers />
   </component>
