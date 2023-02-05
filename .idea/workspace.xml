@@ -162,9 +162,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.CoffeeHouseSpec" />
         <item itemvalue="ScalaTest.CoffeeHouseSpec.Creating CoffeeHouse should result in logging a status message at debug" />
         <item itemvalue="ScalaTest.CoffeeHouseSpec.Creating CoffeeHouse should result in creating a child actor with the name 'waiter'" />
-        <item itemvalue="ScalaTest.CoffeeHouseSpec" />
         <item itemvalue="ScalaTest.CoffeeHouseAppSpec" />
         <item itemvalue="Scala REPL.Scala REPL" />
       </list>
@@ -230,7 +230,7 @@
       <workItem from="1675423544200" duration="1844000" />
       <workItem from="1675426316432" duration="403000" />
       <workItem from="1675491020008" duration="80000" />
-      <workItem from="1675491109488" duration="4075000" />
+      <workItem from="1675491109488" duration="5904000" />
     </task>
     <servers />
   </component>

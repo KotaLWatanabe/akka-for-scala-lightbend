@@ -15,6 +15,11 @@ class Guest(waiter: ActorRef, favoriteCoffee: Coffee, finishCoffeeDuration: Fini
 
   orderCoffee()
 
+  override def postStop(): Unit = {
+    log.info(s"good bye.")
+    super.postStop()
+  }
+
   override def receive: Receive = {
     case Waiter.CoffeeServed(coffee) =>
       coffeeCount += 1

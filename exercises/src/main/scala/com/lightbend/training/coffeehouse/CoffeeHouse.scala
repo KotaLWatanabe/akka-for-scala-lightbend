@@ -7,11 +7,15 @@ import scala.concurrent.duration._
 
 object CoffeeHouse {
   case class CreateGuest(favoriteCoffee: Coffee)
-  def props: Props = Props(new CoffeeHouse)
+  case class ApproveCoffee(coffee: Coffee, guest: ActorRef)
+  def props(caffeineLimit: Int): Props = Props(new CoffeeHouse(caffeineLimit))
 }
-class CoffeeHouse extends Actor with ActorLogging {
+
+class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
   import CoffeeHouse._
   log.debug("CoffeeHouse Open")
+
+  private var guestBook: Map[ActorRef, Int] = Map.empty.withDefaultValue(0)
 
   private val finishedCoffeeDuration: FiniteDuration =
     context.system.settings.config.getDuration("coffee-house.guest.finish-coffee-duration", TimeUnit.MILLISECONDS).millis
@@ -25,11 +29,23 @@ class CoffeeHouse extends Actor with ActorLogging {
 
 
   protected def createBarista(): ActorRef = context.actorOf(Barista.props(prepareCoffeeDuration), "barista")
+
   protected def createGuest(favoriteCoffee: Coffee): ActorRef = context.actorOf(Guest.props(waiter, favoriteCoffee, finishedCoffeeDuration))
-  private def createWaiter(): ActorRef = context.actorOf(Waiter.props(barista), "waiter")
+
+  private def createWaiter(): ActorRef = context.actorOf(Waiter.props(self), "waiter")
 
   override def receive: Receive = {
-    case CreateGuest(coffee: Coffee) => createGuest(coffee)
+    case CreateGuest(favoriteCoffee) =>
+      val guest = createGuest(favoriteCoffee)
+      guestBook += guest -> 0
+      log.info(s"Guest $guest added to guest book.")
+    case ApproveCoffee(coffee, guest) if guestBook(guest) < caffeineLimit =>
+      guestBook += guest -> (guestBook(guest) + 1)
+      log.info(s"Guest $guest caffeine count incremented.")
+      barista.forward(Barista.PrepareCoffee(coffee, guest))
+    case ApproveCoffee(coffee, guest) =>
+      log.info(s"Sorry, $guest, but you have reached your limit.")
+      context.stop(guest)
     case _ => sender() ! "Coffee Brewing"
   }
 }

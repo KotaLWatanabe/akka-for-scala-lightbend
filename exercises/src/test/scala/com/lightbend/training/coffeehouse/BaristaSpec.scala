@@ -5,9 +5,7 @@
 package com.lightbend.training.coffeehouse
 
 import akka.testkit.TestProbe
-
 import scala.concurrent.duration.DurationInt
-import scala.language.postfixOps
 
 class BaristaSpec extends BaseAkkaSpec {
 
