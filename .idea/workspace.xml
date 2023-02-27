@@ -6,18 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a60404b8-b975-45e2-88ac-21f7fe6768e7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.bookmark" beforeDir="false" afterPath="$PROJECT_DIR$/.bookmark" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/akka-diagnostics/Diagnostics-default.json" beforeDir="false" afterPath="$PROJECT_DIR$/akka-diagnostics/Diagnostics-default.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/akka-diagnostics/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/akka-diagnostics/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-coffee-house-system.json" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-coffee-house-system.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-default.json" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/akka-diagnostics/Diagnostics-default.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/akka-diagnostics/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/akka-diagnostics/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Barista.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Barista.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Guest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Guest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Waiter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Waiter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbend.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/lightbend.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/lightbend.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/project/lightbend.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouseApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouseApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/test/resources/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/resources/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/test/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/resources/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/CoffeeHouseSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/CoffeeHouseSpec.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +247,7 @@
       <workItem from="1675491020008" duration="80000" />
       <workItem from="1675491109488" duration="8671000" />
       <workItem from="1676111789581" duration="162000" />
-      <workItem from="1677232805542" duration="11866000" />
+      <workItem from="1677232805542" duration="14103000" />
     </task>
     <servers />
   </component>

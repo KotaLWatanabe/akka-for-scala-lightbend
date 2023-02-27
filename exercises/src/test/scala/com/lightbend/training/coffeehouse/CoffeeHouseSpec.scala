@@ -8,6 +8,7 @@ import akka.actor.{ActorRef, Props}
 import akka.testkit.{EventFilter, TestActorRef, TestProbe}
 
 import scala.concurrent.duration.DurationInt
+import scala.language.postfixOps
 
 class CoffeeHouseSpec extends BaseAkkaSpec {
 
@@ -46,7 +47,7 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
       val barista = TestProbe()
       val coffeeHouse =
         TestActorRef(new CoffeeHouse(Int.MaxValue) {
-          override def createBarista() = barista.ref
+          override def createBarista(): ActorRef = barista.ref
         })
       coffeeHouse ! CoffeeHouse.ApproveCoffee(Coffee.Akkaccino, system.deadLetters)
       barista.expectMsg(Barista.PrepareCoffee(Coffee.Akkaccino, system.deadLetters))
@@ -93,7 +94,7 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
       val barista = TestProbe()
       val coffeeHouse =
         TestActorRef(new CoffeeHouse(Int.MaxValue) {
-          override def createBarista() = barista.ref
+          override def createBarista(): ActorRef = barista.ref
         })
       coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, Int.MaxValue)
       val guest = barista.expectMsgPF() {
@@ -118,6 +119,23 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
         val guest = TestProbe().expectActor("/user/thanks-coffee-house/$*")
         coffeeHouse ! CoffeeHouse.ApproveCoffee(Coffee.Akkaccino, guest)
       }
+    }
+  }
+
+  "On failure of Guest CoffeeHouse" should {
+    "stop it" in {
+      val barista = TestProbe()
+      val coffeeHouse =
+        TestActorRef(new CoffeeHouse(Int.MaxValue) {
+          override def createBarista(): ActorRef = barista.ref
+        })
+      coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, 0)
+      val guest = barista.expectMsgPF() {
+        case Barista.PrepareCoffee(Coffee.Akkaccino, guest) => guest
+      }
+      barista.watch(guest)
+      guest ! Waiter.CoffeeServed(Coffee.Akkaccino)
+      barista.expectTerminated(guest)
     }
   }
 }
