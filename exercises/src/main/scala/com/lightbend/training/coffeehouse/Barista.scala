@@ -3,6 +3,7 @@ package com.lightbend.training.coffeehouse
 import akka.actor.{Actor, ActorLogging, ActorRef, Props}
 
 import scala.concurrent.duration.FiniteDuration
+import scala.language.postfixOps
 
 object Barista {
   case class PrepareCoffee(coffee: Coffee, guest: ActorRef)

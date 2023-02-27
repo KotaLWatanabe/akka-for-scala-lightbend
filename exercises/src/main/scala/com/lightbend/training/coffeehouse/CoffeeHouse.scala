@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit
 import scala.concurrent.duration._
 
 object CoffeeHouse {
-  case class CreateGuest(favoriteCoffee: Coffee)
+  case class CreateGuest(favoriteCoffee: Coffee, caffeineLimit: Int)
   case class ApproveCoffee(coffee: Coffee, guest: ActorRef)
   def props(caffeineLimit: Int): Props = Props(new CoffeeHouse(caffeineLimit))
 }
@@ -30,13 +30,14 @@ class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
 
   protected def createBarista(): ActorRef = context.actorOf(Barista.props(prepareCoffeeDuration), "barista")
 
-  protected def createGuest(favoriteCoffee: Coffee): ActorRef = context.actorOf(Guest.props(waiter, favoriteCoffee, finishedCoffeeDuration))
+  protected def createGuest(favoriteCoffee: Coffee, guestCaffeineLimit: Int): ActorRef =
+    context.actorOf(Guest.props(waiter, favoriteCoffee, finishedCoffeeDuration, guestCaffeineLimit))
 
   private def createWaiter(): ActorRef = context.actorOf(Waiter.props(self), "waiter")
 
   override def receive: Receive = {
-    case CreateGuest(favoriteCoffee) =>
-      val guest = createGuest(favoriteCoffee)
+    case CreateGuest(favoriteCoffee, guestCaffeineLimit) =>
+      val guest = createGuest(favoriteCoffee, guestCaffeineLimit)
       guestBook += guest -> 0
       log.info(s"Guest $guest added to guest book.")
       context.watch(guest)
