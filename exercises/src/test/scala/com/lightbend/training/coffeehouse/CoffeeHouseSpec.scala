@@ -4,11 +4,10 @@
 
 package com.lightbend.training.coffeehouse
 
-import akka.actor.{ActorRef, Props}
 import akka.testkit.{EventFilter, TestActorRef, TestProbe}
 
 import scala.concurrent.duration.DurationInt
-import scala.language.postfixOps
+import akka.actor.{ActorRef, Props}
 
 class CoffeeHouseSpec extends BaseAkkaSpec {
 
@@ -47,7 +46,7 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
       val barista = TestProbe()
       val coffeeHouse =
         TestActorRef(new CoffeeHouse(Int.MaxValue) {
-          override def createBarista(): ActorRef = barista.ref
+          override def createBarista() = barista.ref
         })
       coffeeHouse ! CoffeeHouse.ApproveCoffee(Coffee.Akkaccino, system.deadLetters)
       barista.expectMsg(Barista.PrepareCoffee(Coffee.Akkaccino, system.deadLetters))
@@ -56,7 +55,7 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
       val dummyGuest = TestProbe().ref // Just there to get an ActorRef...
       val dummyWaiter = TestProbe()
       val coffeeHouse = TestActorRef(new CoffeeHouse(Int.MaxValue) {
-        override def createBarista(): ActorRef = context.actorOf(Barista.props(0.seconds), "barista")
+         override def createBarista(): ActorRef = context.actorOf(Barista.props(0.seconds, 100), "barista")
       })
       coffeeHouse.tell(CoffeeHouse.ApproveCoffee(Coffee.Akkaccino, dummyGuest),dummyWaiter.ref)
       dummyWaiter.expectMsg(Barista.CoffeePrepared(Coffee.Akkaccino, dummyGuest))
@@ -94,7 +93,7 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
       val barista = TestProbe()
       val coffeeHouse =
         TestActorRef(new CoffeeHouse(Int.MaxValue) {
-          override def createBarista(): ActorRef = barista.ref
+          override def createBarista() = barista.ref
         })
       coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, Int.MaxValue)
       val guest = barista.expectMsgPF() {
@@ -127,7 +126,7 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
       val barista = TestProbe()
       val coffeeHouse =
         TestActorRef(new CoffeeHouse(Int.MaxValue) {
-          override def createBarista(): ActorRef = barista.ref
+          override def createBarista() = barista.ref
         })
       coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, 0)
       val guest = barista.expectMsgPF() {
