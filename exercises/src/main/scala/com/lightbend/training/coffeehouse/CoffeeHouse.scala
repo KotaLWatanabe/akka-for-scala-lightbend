@@ -1,6 +1,14 @@
 package com.lightbend.training.coffeehouse
 
-import akka.actor.{Actor, ActorLogging, ActorRef, OneForOneStrategy, Props, SupervisorStrategy, Terminated}
+import akka.actor.{
+  Actor,
+  ActorLogging,
+  ActorRef,
+  OneForOneStrategy,
+  Props,
+  SupervisorStrategy,
+  Terminated
+}
 
 import java.util.concurrent.TimeUnit
 import scala.concurrent.duration._
@@ -18,33 +26,62 @@ class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
   override def supervisorStrategy: SupervisorStrategy = {
     val decider: SupervisorStrategy.Decider = {
       case Guest.CaffeineException => SupervisorStrategy.Stop
+      case Waiter.FrustratedException(coffee, guest) =>
+        barista.forward(Barista.PrepareCoffee(coffee, guest))
+        SupervisorStrategy.Restart
     }
     OneForOneStrategy()(decider.orElse(super.supervisorStrategy.decider))
   }
 
   private var guestBook: Map[ActorRef, Int] = Map.empty.withDefaultValue(0)
 
-  private val baristaAccuracy = context.system.settings.config.getInt("coffee-house.barista.accuracy")
+  private val baristaAccuracy =
+    context.system.settings.config.getInt("coffee-house.barista.accuracy")
 
-  private val waiterMaxComplaintCount = context.system.settings.config.getInt("coffee-house.waiter.max-complaint-count")
+  private val waiterMaxComplaintCount = context.system.settings.config
+    .getInt("coffee-house.waiter.max-complaint-count")
+
   private val finishedCoffeeDuration: FiniteDuration =
-    context.system.settings.config.getDuration("coffee-house.guest.finish-coffee-duration", TimeUnit.MILLISECONDS).millis
-
-
+    context.system.settings.config
+      .getDuration(
+        "coffee-house.guest.finish-coffee-duration",
+        TimeUnit.MILLISECONDS
+      )
+      .millis
 
   private val prepareCoffeeDuration: FiniteDuration =
-    context.system.settings.config.getDuration("coffee-house.barista.prepare-coffee-duration", TimeUnit.MILLISECONDS).millis
+    context.system.settings.config
+      .getDuration(
+        "coffee-house.barista.prepare-coffee-duration",
+        TimeUnit.MILLISECONDS
+      )
+      .millis
 
   private val barista: ActorRef = createBarista()
   private val waiter: ActorRef = createWaiter()
 
+  protected def createBarista(): ActorRef = context.actorOf(
+    Barista.props(prepareCoffeeDuration, baristaAccuracy),
+    "barista"
+  )
 
-  protected def createBarista(): ActorRef = context.actorOf(Barista.props(prepareCoffeeDuration, baristaAccuracy), "barista")
+  protected def createGuest(
+      favoriteCoffee: Coffee,
+      guestCaffeineLimit: Int
+  ): ActorRef =
+    context.actorOf(
+      Guest.props(
+        waiter,
+        favoriteCoffee,
+        finishedCoffeeDuration,
+        guestCaffeineLimit
+      )
+    )
 
-  protected def createGuest(favoriteCoffee: Coffee, guestCaffeineLimit: Int): ActorRef =
-    context.actorOf(Guest.props(waiter, favoriteCoffee, finishedCoffeeDuration, guestCaffeineLimit))
-
-  private def createWaiter(): ActorRef = context.actorOf(Waiter.props(self, barista, waiterMaxComplaintCount), "waiter")
+  protected def createWaiter(): ActorRef = context.actorOf(
+    Waiter.props(self, barista, waiterMaxComplaintCount),
+    "waiter"
+  )
 
   override def receive: Receive = {
     case CreateGuest(favoriteCoffee, guestCaffeineLimit) =>

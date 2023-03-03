@@ -3,7 +3,7 @@
 
 package com.lightbend.training.coffeehouse
 
-import akka.actor.{Actor, ActorRef, ActorSystem, Props, SupervisorStrategy}
+import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.event.Logging
 
 import scala.annotation.tailrec
