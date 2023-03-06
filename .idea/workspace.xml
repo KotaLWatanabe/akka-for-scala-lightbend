@@ -7,11 +7,11 @@
     <list default="true" id="a60404b8-b975-45e2-88ac-21f7fe6768e7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.bookmark" beforeDir="false" afterPath="$PROJECT_DIR$/.bookmark" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/resources/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouse.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/CoffeeHouse.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Waiter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/main/scala/com/lightbend/training/coffeehouse/Waiter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/src/test/resources/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/resources/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/test/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/resources/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/CoffeeHouseSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/CoffeeHouseSpec.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/WaiterSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/WaiterSpec.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +44,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.scala" root0="SKIP_HIGHLIGHTING" />
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="minikube" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -87,7 +87,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3475862",
     "scala_project_settings_configurable.last_selected_tab_index": "0",
-    "settings.editor.selected.configurable": "http.proxy",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -248,7 +248,8 @@
       <workItem from="1675491020008" duration="80000" />
       <workItem from="1675491109488" duration="8671000" />
       <workItem from="1676111789581" duration="162000" />
-      <workItem from="1677232805542" duration="19163000" />
+      <workItem from="1677232805542" duration="21077000" />
+      <workItem from="1678013486598" duration="3935000" />
     </task>
     <servers />
   </component>
