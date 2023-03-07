@@ -9,6 +9,10 @@ import scala.concurrent.duration._
 object CoffeeHouse {
   case class CreateGuest(favoriteCoffee: Coffee, caffeineLimit: Int)
   case class ApproveCoffee(coffee: Coffee, guest: ActorRef)
+  
+  case object GetStatus
+  case class Status(guestCount: Int)
+  
   def props(caffeineLimit: Int): Props = Props(new CoffeeHouse(caffeineLimit))
 }
 
@@ -92,6 +96,7 @@ class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
     case Terminated(guest) =>
       log.info(s"Thanks, $guest, for being our guest!")
       guestBook -= guest
-    case _ => sender() ! "Coffee Brewing"
+    case GetStatus =>
+      sender() ! Status(guestBook.size)
   }
 }

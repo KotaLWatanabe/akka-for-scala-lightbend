@@ -4,8 +4,11 @@
 
 package com.lightbend.training.coffeehouse
 
-import akka.testkit.{ EventFilter, TestProbe }
+import akka.actor.ActorRef
+import akka.testkit.{EventFilter, TestProbe}
+
 import scala.concurrent.duration.DurationInt
+import scala.language.postfixOps
 
 class GuestSpec extends BaseAkkaSpec {
 
@@ -48,7 +51,7 @@ class GuestSpec extends BaseAkkaSpec {
     }
   }
 
-  def createGuest(waiter: TestProbe) = {
+  def createGuest(waiter: TestProbe): ActorRef = {
     val guest = system.actorOf(Guest.props(waiter.ref, Coffee.Akkaccino, 100 milliseconds, Int.MaxValue))
     waiter.expectMsg(Waiter.ServeCoffee(Coffee.Akkaccino)) // Creating Guest immediately sends Waiter.ServeCoffee
     guest

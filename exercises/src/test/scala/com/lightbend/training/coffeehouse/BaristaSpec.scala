@@ -21,7 +21,7 @@ class BaristaSpec extends BaseAkkaSpec {
         barista ! Barista.PrepareCoffee(Coffee.Akkaccino, system.deadLetters)
         sender.expectMsg(Barista.CoffeePrepared(Coffee.Akkaccino, system.deadLetters))
       }
-  }
+    }
     "result in sending a CoffeePrepared response with a random Coffee for an inaccurate one" in {
       val waiter = TestProbe()
       val accuracy = 50

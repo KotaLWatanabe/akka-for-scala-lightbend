@@ -1,13 +1,19 @@
 {
-  "start-time" : "2023-02-05T08:31:28.097",
+  "start-time" : "2023-03-07T06:10:50.236",
   "akka-version" : "2.6.19",
   "akka-diagnostics-version" : "1.1.16",
-  "classpath" : "F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\job-3\target\5f6201cb\dc9a6f80\exercises_2.13-1.3.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\7d3df024\d462bd78\common_2.13-1.3.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\d4476f00\3588b5ba\scala-library-2.13.4.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\d5ccadd5\2bc54d36\akka-actor_2.13-2.6.19.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\8eb3f3ed\e024b0b4\akka-slf4j_2.13-2.6.19.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\b7c56e9c\1c6abfda\logback-classic-1.2.11.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\bce6a4a3\728f96ee\scala-parser-combinators_2.13-2.1.1.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\97e5769e\03f7a303\akka-diagnostics_2.13-1.1.16.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\9e8cf5e1\ba2b22b8\cinnamon-akka_2.13-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\b9d05b11\7fbcd506\cinnamon-jvm-metrics-producer-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\234b5605\332c122d\cinnamon-prometheus-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\68f3b43f\c8681452\cinnamon-prometheus-httpserver-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\d69fbf74\bc20bcc6\config-1.4.2.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\3e2daf63\40db4a31\scala-java8-compat_2.13-1.0.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\a3d0ab8c\5edc0fab\slf4j-api-1.7.36.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\c0a83cc3\bb18af30\logback-core-1.2.11.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\b9a8ad3a\066b4db5\commons-lang3-3.5.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\5de99f58\b41e702e\cinnamon-java-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\241e800f\7a3d31a6\cinnamon-scala_2.13-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\80786758\fa5260db\cinnamon-core-java-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\c5674f74\c140e4ce\simpleclient-0.8.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\d5f4785b\14d77992\HdrHistogram-2.1.12.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\3fc5f840\1b96c5e6\simpleclient_httpserver-0.8.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\ec2ac0fb\80a00cf2\cinnamon-core_2.13-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\ab1da767\541f22f1\cinnamon-common-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_51862958\target\e2ea895b\9f77b5f0\simpleclient_common-0.8.0.jar",
-  "configuration-warnings" : [],
+  "classpath" : "F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\job-1\target\5f6201cb\485b0ba7\exercises_2.13-1.3.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\7d3df024\d462bd78\common_2.13-1.3.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\d4476f00\3588b5ba\scala-library-2.13.4.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\d5ccadd5\2bc54d36\akka-actor_2.13-2.6.19.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\8eb3f3ed\e024b0b4\akka-slf4j_2.13-2.6.19.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\b7c56e9c\1c6abfda\logback-classic-1.2.11.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\bce6a4a3\728f96ee\scala-parser-combinators_2.13-2.1.1.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\97e5769e\03f7a303\akka-diagnostics_2.13-1.1.16.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\9e8cf5e1\ba2b22b8\cinnamon-akka_2.13-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\b9d05b11\7fbcd506\cinnamon-jvm-metrics-producer-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\234b5605\332c122d\cinnamon-prometheus-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\68f3b43f\c8681452\cinnamon-prometheus-httpserver-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\d69fbf74\bc20bcc6\config-1.4.2.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\3e2daf63\40db4a31\scala-java8-compat_2.13-1.0.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\a3d0ab8c\5edc0fab\slf4j-api-1.7.36.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\c0a83cc3\bb18af30\logback-core-1.2.11.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\b9a8ad3a\066b4db5\commons-lang3-3.5.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\5de99f58\b41e702e\cinnamon-java-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\241e800f\7a3d31a6\cinnamon-scala_2.13-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\80786758\fa5260db\cinnamon-core-java-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\c5674f74\c140e4ce\simpleclient-0.8.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\d5f4785b\14d77992\HdrHistogram-2.1.12.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\3fc5f840\1b96c5e6\simpleclient_httpserver-0.8.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\ec2ac0fb\80a00cf2\cinnamon-core_2.13-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\ab1da767\541f22f1\cinnamon-common-2.17.0.jar;F:\Workspace\ScalaProject\LAS-P-lightbend-akka-for-scala-professional-v1\target\bg-jobs\sbt_3e369c54\target\e2ea895b\9f77b5f0\simpleclient_common-0.8.0.jar",
+  "configuration-warnings" : [
+    {
+      "checker-key" : "typo",
+      "message" : "akka.actor.deployment.'/coffee-house/barista'.nr-of-instance is not an Akka configuration setting. Did you mean one of 'akka.actor.deployment./IO-DNS/inet-address.nr-of-instances', 'akka.actor.deployment./IO-DNS/async-dns.nr-of-instances', 'akka.actor.deployment.default.nr-of-instances'? Is it a typo or is it placed in the wrong section? Application specific properties should be placed outside the 'akka' config tree.",
+      "properties" : "akka.actor.deployment."/coffee-house/barista".nr-of-instance",
+      "defaults" : ""
+    }],
   "system-metrics" : {
     "heap-init" : 1073741824,
     "heap-max" : 17137926144,
-    "heap-used" : 30382456,
+    "heap-used" : 30356488,
     "heap-committed" : 1073741824,
     "os-processors" : 24,
     "mem-pool-0" : {
@@ -15,7 +21,7 @@
       "type" : "Non-heap memory",
       "init" : 2555904,
       "max" : 7667712,
-      "used" : 2488704,
+      "used" : 1910784,
       "committed" : 3145728
     },
     "mem-pool-1" : {
@@ -23,24 +29,24 @@
       "type" : "Non-heap memory",
       "init" : 0,
       "max" : -1,
-      "used" : 20430504,
-      "committed" : 20643840
+      "used" : 20878368,
+      "committed" : 21233664
     },
     "mem-pool-2" : {
       "name" : "CodeHeap 'profiled nmethods'",
       "type" : "Non-heap memory",
       "init" : 2555904,
       "max" : 121962496,
-      "used" : 5079168,
-      "committed" : 5111808
+      "used" : 5158912,
+      "committed" : 5177344
     },
     "mem-pool-3" : {
       "name" : "Compressed Class Space",
       "type" : "Non-heap memory",
       "init" : 0,
       "max" : 1073741824,
-      "used" : 2456440,
-      "committed" : 2555904
+      "used" : 2509816,
+      "committed" : 2686976
     },
     "mem-pool-4" : {
       "name" : "G1 Eden Space",
@@ -63,7 +69,7 @@
       "type" : "Heap memory",
       "init" : 0,
       "max" : -1,
-      "used" : 5216632,
+      "used" : 5190664,
       "committed" : 8388608
     },
     "mem-pool-7" : {
@@ -71,7 +77,7 @@
       "type" : "Non-heap memory",
       "init" : 2555904,
       "max" : 122028032,
-      "used" : 1052544,
+      "used" : 1098240,
       "committed" : 2555904
     }
   },
@@ -81,6 +87,19 @@
             "debug" : {
                 "lifecycle" : "on",
                 "unhandled" : "on"
+            },
+            "default-dispatcher" : {
+                "fork-join-executor" : {
+                    "parallelism-factor" : 2,
+                    "parallelism-max" : 16,
+                    "parallelism-min" : 4
+                }
+            },
+            "deployment" : {
+                "/coffee-house/barista" : {
+                    "nr-of-instance" : 12,
+                    "router" : "round-robin-pool"
+                }
             }
         },
         "instrumentations" : [
@@ -258,10 +277,16 @@
     },
     "coffee-house" : {
         "barista" : {
+            "accuracy" : 20,
             "prepare-coffee-duration" : "2 seconds"
         },
+        "caffeine-limit" : 1000,
         "guest" : {
             "finish-coffee-duration" : "2 seconds"
+        },
+        "status-timeout" : "5 seconds",
+        "waiter" : {
+            "max-complaint-count" : 2
         }
     },
     "excluded-sensitive-paths" : [
@@ -275,19 +300,19 @@
     },
     "java" : {
         "class" : {
-            "path" : "F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\job-3\\target\\5f6201cb\\dc9a6f80\\exercises_2.13-1.3.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\7d3df024\\d462bd78\\common_2.13-1.3.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\d4476f00\\3588b5ba\\scala-library-2.13.4.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\d5ccadd5\\2bc54d36\\akka-actor_2.13-2.6.19.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\8eb3f3ed\\e024b0b4\\akka-slf4j_2.13-2.6.19.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\b7c56e9c\\1c6abfda\\logback-classic-1.2.11.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\bce6a4a3\\728f96ee\\scala-parser-combinators_2.13-2.1.1.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\97e5769e\\03f7a303\\akka-diagnostics_2.13-1.1.16.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\9e8cf5e1\\ba2b22b8\\cinnamon-akka_2.13-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\b9d05b11\\7fbcd506\\cinnamon-jvm-metrics-producer-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\234b5605\\332c122d\\cinnamon-prometheus-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\68f3b43f\\c8681452\\cinnamon-prometheus-httpserver-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\d69fbf74\\bc20bcc6\\config-1.4.2.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\3e2daf63\\40db4a31\\scala-java8-compat_2.13-1.0.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\a3d0ab8c\\5edc0fab\\slf4j-api-1.7.36.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\c0a83cc3\\bb18af30\\logback-core-1.2.11.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\b9a8ad3a\\066b4db5\\commons-lang3-3.5.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\5de99f58\\b41e702e\\cinnamon-java-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\241e800f\\7a3d31a6\\cinnamon-scala_2.13-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\80786758\\fa5260db\\cinnamon-core-java-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\c5674f74\\c140e4ce\\simpleclient-0.8.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\d5f4785b\\14d77992\\HdrHistogram-2.1.12.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\3fc5f840\\1b96c5e6\\simpleclient_httpserver-0.8.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\ec2ac0fb\\80a00cf2\\cinnamon-core_2.13-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\ab1da767\\541f22f1\\cinnamon-common-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_51862958\\target\\e2ea895b\\9f77b5f0\\simpleclient_common-0.8.0.jar",
+            "path" : "F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\job-1\\target\\5f6201cb\\485b0ba7\\exercises_2.13-1.3.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\7d3df024\\d462bd78\\common_2.13-1.3.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\d4476f00\\3588b5ba\\scala-library-2.13.4.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\d5ccadd5\\2bc54d36\\akka-actor_2.13-2.6.19.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\8eb3f3ed\\e024b0b4\\akka-slf4j_2.13-2.6.19.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\b7c56e9c\\1c6abfda\\logback-classic-1.2.11.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\bce6a4a3\\728f96ee\\scala-parser-combinators_2.13-2.1.1.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\97e5769e\\03f7a303\\akka-diagnostics_2.13-1.1.16.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\9e8cf5e1\\ba2b22b8\\cinnamon-akka_2.13-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\b9d05b11\\7fbcd506\\cinnamon-jvm-metrics-producer-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\234b5605\\332c122d\\cinnamon-prometheus-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\68f3b43f\\c8681452\\cinnamon-prometheus-httpserver-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\d69fbf74\\bc20bcc6\\config-1.4.2.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\3e2daf63\\40db4a31\\scala-java8-compat_2.13-1.0.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\a3d0ab8c\\5edc0fab\\slf4j-api-1.7.36.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\c0a83cc3\\bb18af30\\logback-core-1.2.11.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\b9a8ad3a\\066b4db5\\commons-lang3-3.5.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\5de99f58\\b41e702e\\cinnamon-java-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\241e800f\\7a3d31a6\\cinnamon-scala_2.13-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\80786758\\fa5260db\\cinnamon-core-java-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\c5674f74\\c140e4ce\\simpleclient-0.8.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\d5f4785b\\14d77992\\HdrHistogram-2.1.12.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\3fc5f840\\1b96c5e6\\simpleclient_httpserver-0.8.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\ec2ac0fb\\80a00cf2\\cinnamon-core_2.13-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\ab1da767\\541f22f1\\cinnamon-common-2.17.0.jar;F:\\Workspace\\ScalaProject\\LAS-P-lightbend-akka-for-scala-professional-v1\\target\\bg-jobs\\sbt_3e369c54\\target\\e2ea895b\\9f77b5f0\\simpleclient_common-0.8.0.jar",
             "version" : "63.0"
         },
-        "home" : "C:\\Users\\Kota\\.jdks\\openjdk-19.0.1",
+        "home" : "C:\\Users\\Kota\\.jdks\\openjdk-19.0.2",
         "io" : {
             "tmpdir" : "C:\\Users\\Kota\\AppData\\Local\\Temp\\"
         },
         "library" : {
-            "path" : "C:\\Users\\Kota\\.jdks\\openjdk-19.0.1\\bin;C:\\Windows\\Sun\\Java\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\PROGRA~1\\JPKI;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Kubernetes\\Minikube;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Calibre2\\;C:\\Program Files\\PowerShell\\7\\;C:\\Users\\Kota\\AppData\\Local\\Microsoft\\WindowsApps;F:\\JetBrains\\IntelliJ IDEA 2022.2\\bin;C:\\Users\\Kota\\AppData\\Local\\JetBrains\\Toolbox\\scripts;F:\\Programs\\VS_Code\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\AdoptOpenJDK\\openjdk8-binaries\\releases\\download\\jdk8u292-b10\\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\\jdk8u292-b10\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\data\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\adoptium\\temurin18-binaries\\releases\\download\\jdk-18.0.2%252B9\\OpenJDK18U-jdk_x64_windows_hotspot_18.0.2_9.zip\\jdk-18.0.2+9\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\AdoptOpenJDK\\openjdk11-binaries\\releases\\download\\jdk-11%252B28\\OpenJDK11-jdk_x64_windows_hotspot_11_28.zip\\jdk-11+28\\bin;C:\\Users\\Kota\\AppData\\Local\\GitHubDesktop\\bin;F:\\JetBrains\\IntelliJ IDEA 2022.2.1\\bin;C:\\Users\\Kota\\AppData\\Roaming\\npm;C:\\spark-3.3.1-bin-hadoop3-scala2.13\\bin;C:\\ProgramData\\chocolatey\\lib\\kubernetes-helm\\tools\\windows-amd64;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\cdn.azul.com\\zulu\\bin\\zulu19.30.11-ca-jdk19.0.1-win_x64.zip\\zulu19.30.11-ca-jdk19.0.1-win_x64\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\cdn.azul.com\\zulu\\bin\\zulu18.32.13-ca-jdk18.0.2.1-win_x64.zip\\zulu18.32.13-ca-jdk18.0.2.1-win_x64\\bin;."
+            "path" : "C:\\Users\\Kota\\.jdks\\openjdk-19.0.2\\bin;C:\\Windows\\Sun\\Java\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\PROGRA~1\\JPKI;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Kubernetes\\Minikube;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Calibre2\\;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;%NVM_HOME%;%NVM_SYMLINK%;C:\\Program Files (x86)\\Elm\\0.19.1\\bin;C:\\Users\\Kota\\.cargo\\bin;C:\\Users\\Kota\\AppData\\Local\\Microsoft\\WindowsApps;F:\\JetBrains\\IntelliJ IDEA 2022.2\\bin;C:\\Users\\Kota\\AppData\\Local\\JetBrains\\Toolbox\\scripts;F:\\Programs\\VS_Code\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\AdoptOpenJDK\\openjdk8-binaries\\releases\\download\\jdk8u292-b10\\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\\jdk8u292-b10\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\data\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\adoptium\\temurin18-binaries\\releases\\download\\jdk-18.0.2%252B9\\OpenJDK18U-jdk_x64_windows_hotspot_18.0.2_9.zip\\jdk-18.0.2+9\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\AdoptOpenJDK\\openjdk11-binaries\\releases\\download\\jdk-11%252B28\\OpenJDK11-jdk_x64_windows_hotspot_11_28.zip\\jdk-11+28\\bin;C:\\Users\\Kota\\AppData\\Local\\GitHubDesktop\\bin;F:\\JetBrains\\IntelliJ IDEA 2022.2.1\\bin;C:\\Users\\Kota\\AppData\\Roaming\\npm;C:\\spark-3.3.1-bin-hadoop3-scala2.13\\bin;C:\\Program Files\\Kubernetes\\Minikube;C:\\ProgramData\\chocolatey\\lib\\kubernetes-helm\\tools\\windows-amd64;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\cdn.azul.com\\zulu\\bin\\zulu19.30.11-ca-jdk19.0.1-win_x64.zip\\zulu19.30.11-ca-jdk19.0.1-win_x64\\bin;C:\\Users\\Kota\\AppData\\Local\\Coursier\\cache\\arc\\https\\cdn.azul.com\\zulu\\bin\\zulu18.32.13-ca-jdk18.0.2.1-win_x64.zip\\zulu18.32.13-ca-jdk18.0.2.1-win_x64\\bin;C:\\Users\\Kota\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\ghcup\\bin;;."
         },
         "runtime" : {
             "name" : "OpenJDK Runtime Environment",
-            "version" : "19.0.1+10-21"
+            "version" : "19.0.2+7-44"
         },
         "specification" : {
             "name" : "Java Platform API Specification",
@@ -299,7 +324,7 @@
                 "bug" : "https://bugreport.java.com/bugreport/"
             }
         },
-        "version" : "19.0.1",
+        "version" : "19.0.2",
         "vm" : {
             "compressedOopsMode" : "Zero based",
             "info" : "mixed mode, sharing",
@@ -310,7 +335,7 @@
                 "version" : "19"
             },
             "vendor" : "Oracle Corporation",
-            "version" : "19.0.1+10-21"
+            "version" : "19.0.2+7-44"
         }
     },
     "jdk" : {
@@ -344,7 +369,7 @@
         },
         "boot" : {
             "library" : {
-                "path" : "C:\\Users\\Kota\\.jdks\\openjdk-19.0.1\\bin"
+                "path" : "C:\\Users\\Kota\\.jdks\\openjdk-19.0.2\\bin"
             }
         },
         "cpu" : {
