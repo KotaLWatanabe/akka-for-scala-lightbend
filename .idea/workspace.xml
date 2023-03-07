@@ -8,7 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.bookmark" beforeDir="false" afterPath="$PROJECT_DIR$/.bookmark" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/src/test/resources/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/resources/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/CoffeeHouseSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/CoffeeHouseSpec.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/BaristaSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/src/test/scala/com/lightbend/training/coffeehouse/BaristaSpec.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +246,7 @@
       <workItem from="1675491109488" duration="8671000" />
       <workItem from="1676111789581" duration="162000" />
       <workItem from="1677232805542" duration="21077000" />
-      <workItem from="1678013486598" duration="5433000" />
+      <workItem from="1678013486598" duration="8028000" />
     </task>
     <servers />
   </component>

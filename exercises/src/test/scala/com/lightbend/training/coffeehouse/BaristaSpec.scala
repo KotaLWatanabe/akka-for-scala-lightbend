@@ -4,21 +4,24 @@
 
 package com.lightbend.training.coffeehouse
 
+import akka.actor.ActorRef
 import akka.testkit.TestProbe
+
 import scala.concurrent.duration.DurationInt
+import scala.language.postfixOps
 
 class BaristaSpec extends BaseAkkaSpec {
 
   "Sending PrepareCoffee to Barista" should {
     "result in sending a CoffeePrepared response after prepareCoffeeDuration" in {
       val sender = TestProbe()
-      implicit val ref = sender.ref
+      implicit val ref: ActorRef = sender.ref
       val barista = system.actorOf(Barista.props(100 milliseconds, 100))
-      sender.within(50 milliseconds, 1000 milliseconds) { // busy is innccurate, so we relax the timing constraints.
+      sender.within(50 milliseconds, 200 milliseconds) { // The time is not extremely accurate, so we relax the timing constraints.
         barista ! Barista.PrepareCoffee(Coffee.Akkaccino, system.deadLetters)
         sender.expectMsg(Barista.CoffeePrepared(Coffee.Akkaccino, system.deadLetters))
       }
-    }
+  }
     "result in sending a CoffeePrepared response with a random Coffee for an inaccurate one" in {
       val waiter = TestProbe()
       val accuracy = 50
@@ -27,7 +30,7 @@ class BaristaSpec extends BaseAkkaSpec {
       val guest = system.deadLetters
       var coffees = List.empty[Coffee]
       for (_ <- 1 to runs) {
-        implicit val ref = waiter.ref
+        implicit val ref: ActorRef = waiter.ref
         barista ! Barista.PrepareCoffee(Coffee.Akkaccino, guest)
         coffees +:= waiter.expectMsgPF() {
           case Barista.CoffeePrepared(coffee, `guest`) => coffee

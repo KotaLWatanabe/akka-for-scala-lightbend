@@ -46,7 +46,7 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
       val barista = TestProbe()
       val coffeeHouse =
         TestActorRef(new CoffeeHouse(Int.MaxValue) {
-          override def createBarista() = barista.ref
+          override def createBarista(): ActorRef = barista.ref
         }, "prepare-coffee")
       coffeeHouse ! CoffeeHouse.CreateGuest(Coffee.Akkaccino, Int.MaxValue)
       val guest = TestProbe().expectActor("/user/prepare-coffee/$*")
@@ -117,9 +117,9 @@ class CoffeeHouseSpec extends BaseAkkaSpec {
     "restart it and resend PrepareCoffee to Barista" in {
       val barista = TestProbe()
       TestActorRef(new CoffeeHouse(Int.MaxValue) {
-        override def createBarista() = barista.ref
-        override def createWaiter() = context.actorOf(Props(new Actor {
-          override def receive = {
+        override def createBarista(): ActorRef = barista.ref
+        override def createWaiter(): ActorRef = context.actorOf(Props(new Actor {
+          override def receive: Receive = {
             case _ => throw Waiter.FrustratedException(Coffee.Akkaccino, system.deadLetters)
           }
         }), "waiter")

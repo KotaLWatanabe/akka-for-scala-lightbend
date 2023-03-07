@@ -4,7 +4,8 @@
 
 package com.lightbend.training.coffeehouse
 
-import akka.testkit.{ EventFilter, TestProbe }
+import akka.actor.ActorRef
+import akka.testkit.{EventFilter, TestProbe}
 
 class WaiterSpec extends BaseAkkaSpec {
 
@@ -12,7 +13,7 @@ class WaiterSpec extends BaseAkkaSpec {
     "result in sending ApproveCoffee to CoffeeHouse" in {
       val coffeeHouse = TestProbe()
       val guest = TestProbe()
-      implicit val ref = guest.ref
+      implicit val ref: ActorRef = guest.ref
       val waiter = system.actorOf(Waiter.props(coffeeHouse.ref, system.deadLetters, Int.MaxValue))
       waiter ! Waiter.ServeCoffee(Coffee.Akkaccino)
       coffeeHouse.expectMsg(CoffeeHouse.ApproveCoffee(Coffee.Akkaccino, guest.ref))
@@ -23,7 +24,7 @@ class WaiterSpec extends BaseAkkaSpec {
     "result in sending PrepareCoffee to Barista" in {
       val barista = TestProbe()
       val guest = TestProbe()
-      implicit val ref = guest.ref
+      implicit val ref: ActorRef = guest.ref
       val waiter = system.actorOf(Waiter.props(system.deadLetters, barista.ref, 1))
       waiter ! Waiter.Complaint(Coffee.Akkaccino)
       barista.expectMsg(Barista.PrepareCoffee(Coffee.Akkaccino, guest.ref))
